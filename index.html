@@ -14,6 +14,8 @@
       src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=51706ed0-e1fb-4dc3-8c23-b1749273dbd6"
       type="text/javascript"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
   </head>
   <body>
     <header class="navbar">
@@ -244,24 +246,30 @@
       </div>
       <!-- container -->
     </section>
-    <section class="newsletter">
-      <div class="newsletter-wrapper">
-        <h2 class="newsletter-title">
-          subscribe to our
-          <span class="newsletter-title__strong">Newsletter</span>
-        </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
-          <input
-            type="text"
-            class="subscribe__input"
-            placeholder="Your email adress"
-          />
-          <button class="subscribe__button">Send</button>
-        </form>
-      </div>
-      <!-- /.newsletter-wrapper -->
-    </section>
-    <!-- /.newsletter -->
+    <div
+      class="parallax-window"
+      data-parallax="scroll"
+      data-image-src="img/newsletter-bg.jpg"
+    >
+      <section class="newsletter">
+        <div class="newsletter-wrapper">
+          <h2 class="newsletter-title">
+            subscribe to our
+            <span class="newsletter-title__strong">Newsletter</span>
+          </h2>
+          <form action="#" class="subscribe newsletter__subscribe">
+            <input
+              type="text"
+              class="subscribe__input"
+              placeholder="Your email adress"
+            />
+            <button class="subscribe__button">Send</button>
+          </form>
+        </div>
+        <!-- /.newsletter-wrapper -->
+      </section>
+      <!-- /.newsletter -->
+    </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
