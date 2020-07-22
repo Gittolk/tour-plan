@@ -18,4 +18,12 @@ function init() {
     center: [7.89, 98.29],
     zoom: 14,
   });
+
+  myGeoObject = new ymaps.GeoObject({
+    // Описание геометрии.
+    geometry: {
+      type: "Point",
+      coordinates: [7.89, 98.29],
+    },
+  });
 }
