@@ -10,6 +10,12 @@
   .footer
     &__input
       flex-basis: 100%
+
+  .card-box
+    &-1
+      &__buynow
+      &--univers
+        width: 320px
     
 @media (max-width: 992px)
   .container, .newsletter-wrapper
@@ -98,7 +104,12 @@
       flex-basis: 49%
   .about-hotel
     &--univers
-      margin-bottom: 25px
+      margin-bottom: 10px
+  .card-box
+    &-1
+      &__buynow
+      &--univers
+        width: 320px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -214,7 +225,8 @@
         &--univers
           display: flex
           justify-content: space-between
-      
+          align-items: center
+          width: 238px  
       &__text
         display: none
     &-univers
@@ -317,6 +329,13 @@
       &__flex
         width: 100%
         flex-wrap: wrap
+  .card-box
+    &-univers
+      &__image
+        &__image
+          width: 50%
+          height: 100%
+          object-fit: cover
 @media (max-width: 320px)
   .logo
     width: 99px

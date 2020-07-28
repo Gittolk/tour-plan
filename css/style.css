@@ -920,6 +920,19 @@ template {
           align-items: center;
 }
 
+.card-box-1__buynow--univers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 268px;
+}
+
 .card-box-1__priceno {
   font-style: normal;
   font-weight: normal;
@@ -1586,6 +1599,9 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .card-box-1--univers {
+    width: 320px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1715,7 +1731,10 @@ template {
         flex-basis: 49%;
   }
   .about-hotel--univers {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+  }
+  .card-box-1--univers {
+    width: 320px;
   }
 }
 
@@ -1893,6 +1912,10 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 238px;
   }
   .card-box-1__text {
     display: none;
@@ -2046,6 +2069,12 @@ template {
     width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .card-box-univers__image__image {
+    width: 50%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
