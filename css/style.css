@@ -1932,7 +1932,7 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 238px;
+    width: 220px;
   }
   .card-box-1__text {
     display: none;
@@ -1956,6 +1956,9 @@ template {
   }
   .about-hotel--univers {
     margin-bottom: 62px;
+  }
+  .about-hotel-univers-discription {
+    width: 50%;
   }
 }
 
@@ -2118,7 +2121,7 @@ template {
             align-items: start;
   }
   .card-box-1__button {
-    width: 200px;
+    width: 170px;
   }
   .card-box-univers__image__image {
     width: 50%;
