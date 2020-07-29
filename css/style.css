@@ -1932,7 +1932,7 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 220px;
+    width: 100%;
   }
   .card-box-1__text {
     display: none;
@@ -2093,6 +2093,23 @@ template {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .card-box {
+    -ms-grid-rows: (600px)[5];
+        grid-template-rows: repeat(5, 600px);
+  }
+  .card-box-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-box-1__image1 {
+    width: 100%;
+    height: 50%;
+  }
+  .card-box-1__discription {
+    width: 100%;
+  }
   .card-box-1__priceyes {
     margin-bottom: 20px;
   }
@@ -2121,11 +2138,17 @@ template {
             align-items: start;
   }
   .card-box-1__button {
-    width: 170px;
+    width: 100%;
   }
-  .card-box-univers__image__image {
-    width: 50%;
-    height: 100%;
+  .card-box-univers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-box-univers__image {
+    width: 100%;
+    height: 50%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -2139,7 +2162,7 @@ template {
     margin-bottom: 25px;
   }
   .about-hotel-univers-discription {
-    width: 50%;
+    width: 100%;
   }
   .about-hotel--univers {
     margin-bottom: 25px;
