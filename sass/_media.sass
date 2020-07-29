@@ -238,8 +238,9 @@
         height: 100%
         object-fit: cover
   .about-hotel
+    margin-bottom: 55px
     &--univers
-      margin-bottom: 25px
+      margin-bottom: 62px
 @media (max-width: 576px) and (min-width: 320px)
   .hotel
     &-info
@@ -330,12 +331,39 @@
         width: 100%
         flex-wrap: wrap
   .card-box
+    &-1
+      &__priceyes
+        margin-bottom: 20px
+      &__priceno
+        display: none
+      &__buynow
+        flex-direction: column
+        align-items: flex-start
+        &--univers
+          display: flex
+          flex-direction: column
+          align-items: start
+      &__button
+        width: 200px
     &-univers
       &__image
         &__image
           width: 50%
           height: 100%
           object-fit: cover
+      &__priceno
+        display: none
+      &-discription
+        width: 50%
+  .about-hotel
+    margin-bottom: 25px
+    &-univers
+      &-discription
+        width: 50%
+  .about-hotel
+    &--univers
+      margin-bottom: 25px
+    
 @media (max-width: 320px)
   .logo
     width: 99px

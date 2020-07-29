@@ -854,6 +854,7 @@ template {
 }
 
 .card-box-1 {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -930,7 +931,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 268px;
+  width: 300px;
 }
 
 .card-box-1__priceno {
@@ -961,6 +962,7 @@ template {
 }
 
 .card-box-univers {
+  position: relative;
   background-color: #0A223D;
   border-radius: 8px;
   overflow: hidden;
@@ -984,6 +986,20 @@ template {
 .card-box-univers__priceno {
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
+}
+
+.card-box .flash-offer {
+  position: absolute;
+  z-index: 90;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  padding: 4px 9px;
+  background-color: #EC1F46;
+  border-radius: 0px 2px 2px 0px;
+  left: 0;
+  top: 26px;
 }
 
 .about-hotel {
@@ -1524,6 +1540,7 @@ template {
       flex-basis: 100%;
   margin-bottom: 23px;
   height: 123px;
+  resize: none;
 }
 
 .footer__button {
@@ -1934,8 +1951,11 @@ template {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .about-hotel {
+    margin-bottom: 55px;
+  }
   .about-hotel--univers {
-    margin-bottom: 25px;
+    margin-bottom: 62px;
   }
 }
 
@@ -2070,11 +2090,56 @@ template {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .card-box-1__priceyes {
+    margin-bottom: 20px;
+  }
+  .card-box-1__priceno {
+    display: none;
+  }
+  .card-box-1__buynow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .card-box-1__buynow--univers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .card-box-1__button {
+    width: 200px;
+  }
   .card-box-univers__image__image {
     width: 50%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .card-box-univers__priceno {
+    display: none;
+  }
+  .card-box-univers-discription {
+    width: 50%;
+  }
+  .about-hotel {
+    margin-bottom: 25px;
+  }
+  .about-hotel-univers-discription {
+    width: 50%;
+  }
+  .about-hotel--univers {
+    margin-bottom: 25px;
   }
 }
 
