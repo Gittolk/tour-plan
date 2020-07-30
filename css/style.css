@@ -1799,6 +1799,7 @@ template {
     top: 78px;
     bottom: 0;
     padding-top: 30px;
+    overflow: auto;
   }
   .navbar-bottom--visible {
     display: block;
@@ -2124,6 +2125,8 @@ template {
     grid-row: 7;
     -ms-grid-column: 1;
     grid-column: 1;
+    min-width: 295px;
+    max-width: 700px;
   }
   .footer__form--mobile {
     -webkit-box-orient: vertical;

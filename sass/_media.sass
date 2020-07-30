@@ -124,6 +124,7 @@
         top: 0
         right: 0
         z-index: 191
+        
     &__user, &__search
       &--mobile
         &--hidden
@@ -141,6 +142,7 @@
       top: 78px
       bottom: 0
       padding-top: 30px
+      overflow: auto
       &--visible
         display: block
     &-menu
@@ -361,6 +363,8 @@
       &-form
         grid-row: 7
         grid-column: 1
+        min-width: 295px
+        max-width: 700px
     &__form
       &--mobile
         flex-direction: column
