@@ -1855,6 +1855,16 @@ template {
   .card-box-1--univers {
     width: 320px;
   }
+  .modal__dialog {
+    max-width: 478px;
+  }
+  .modal__info {
+    display: none;
+  }
+  .modal__button {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2116,6 +2126,10 @@ template {
   .about-hotel-univers-discription {
     width: 50%;
   }
+  .modal__dialog {
+    max-width: 380px;
+    padding: 30px 40px;
+  }
 }
 
 @media (max-width: 576px) and (min-width: 320px) {
@@ -2327,6 +2341,9 @@ template {
   }
   .about-hotel--univers {
     margin-bottom: 25px;
+  }
+  .modal__dialog {
+    width: 320px;
   }
 }
 
