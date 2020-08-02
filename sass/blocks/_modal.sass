@@ -1,4 +1,5 @@
 .modal
+  overflow: auto
   &__overlay
     position: fixed
     left: 0
@@ -7,6 +8,12 @@
     bottom: 0
     background-color: rgba(0, 143, 223, 0.39)
     z-index: 150
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.4s
+    &--visible
+      visibility: visible
+      opacity: 1
   &__dialog
     position: fixed
     top: 50%
@@ -18,6 +25,12 @@
     color: $light
     max-width: 478px
     transform: translate(-50%,-50%)
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.4s
+    &--visible
+      visibility: visible
+      opacity: 1
   &__close
     position: absolute
     right: 18px

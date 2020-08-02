@@ -1617,6 +1617,10 @@ template {
   text-decoration: none;
 }
 
+.modal {
+  overflow: auto;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -1625,6 +1629,15 @@ template {
   bottom: 0;
   background-color: rgba(0, 143, 223, 0.39);
   z-index: 150;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__dialog {
@@ -1639,6 +1652,15 @@ template {
   max-width: 478px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__close {
@@ -1880,7 +1902,7 @@ template {
     left: 0;
     top: 0;
     right: 0;
-    z-index: 191;
+    z-index: 120;
   }
   .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
     display: none;
@@ -2344,8 +2366,12 @@ template {
   }
   .modal__dialog {
     overflow: auto;
-    width: 320px;
     padding: 30px 40px;
+    height: 95%;
+    width: 100%;
+  }
+  .modal__button {
+    margin-bottom: 20px;
   }
 }
 
