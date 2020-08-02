@@ -1856,7 +1856,7 @@ template {
     width: 320px;
   }
   .modal__dialog {
-    max-width: 478px;
+    width: 478px;
   }
   .modal__info {
     display: none;
@@ -2127,8 +2127,8 @@ template {
     width: 50%;
   }
   .modal__dialog {
-    max-width: 380px;
-    padding: 30px 40px;
+    width: 478px;
+    overflow: auto;
   }
 }
 
@@ -2343,7 +2343,9 @@ template {
     margin-bottom: 25px;
   }
   .modal__dialog {
+    overflow: auto;
     width: 320px;
+    padding: 30px 40px;
   }
 }
 
