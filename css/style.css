@@ -57,6 +57,9 @@ a {
 .modal__input.invalid {
   border: 2px solid #EC1F46;
   color: #EC1F46;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
