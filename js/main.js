@@ -56,6 +56,7 @@ $(document).ready(function () {
     var targetModal = $(this).attr("data-href");
     $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
     $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
+    $("body").toggleClass("lock");
     $(document).keydown(function (e) {
       if (e.keyCode == 27) {
         closeModal(event);

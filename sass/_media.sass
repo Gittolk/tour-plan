@@ -119,6 +119,8 @@
       flex-basis: 100%
 
 @media (max-width: 768px)
+  body.lock
+    overflow: hidden
   .container
     max-width: 576px
     width: 92%
@@ -295,9 +297,14 @@
         width: 50%
   .modal
     &__dialog
-      width: 478px
       overflow: auto
+      width: 478px
+      height: 50%
+    &__button
+      margin-bottom: 20px
 @media (max-width: 576px) and (min-width: 320px)
+  body.lock
+    overflow: hidden
   .hotel
     &-info
       &__description
@@ -435,12 +442,17 @@
       margin-bottom: 25px
   .modal
     &__dialog
-      overflow: auto
-      padding: 30px 40px
-      height: 80%
+      padding: 40px 40px
+      height: 55%
       width: 90%
     &__button
       margin-bottom: 20px
+    &__title
+      font-size: 16px
+    &__input
+      height: 40px
+    &__message
+      height: 80px
 
 @media (max-width: 320px)
   .logo

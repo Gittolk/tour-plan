@@ -1890,6 +1890,9 @@ template {
 }
 
 @media (max-width: 768px) {
+  body.lock {
+    overflow: hidden;
+  }
   .container {
     max-width: 576px;
     width: 92%;
@@ -2149,12 +2152,19 @@ template {
     width: 50%;
   }
   .modal__dialog {
-    width: 478px;
     overflow: auto;
+    width: 478px;
+    height: 50%;
+  }
+  .modal__button {
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 576px) and (min-width: 320px) {
+  body.lock {
+    overflow: hidden;
+  }
   .hotel-info__description {
     max-width: 286px;
   }
@@ -2365,13 +2375,21 @@ template {
     margin-bottom: 25px;
   }
   .modal__dialog {
-    overflow: auto;
-    padding: 30px 40px;
-    height: 80%;
+    padding: 40px 40px;
+    height: 55%;
     width: 90%;
   }
   .modal__button {
     margin-bottom: 20px;
+  }
+  .modal__title {
+    font-size: 16px;
+  }
+  .modal__input {
+    height: 40px;
+  }
+  .modal__message {
+    height: 80px;
   }
 }
 
