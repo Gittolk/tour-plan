@@ -1180,8 +1180,9 @@ template {
 
 .newsletter__subscribe label {
   position: absolute;
-  top: 55px;
+  top: 58px;
   left: 20px;
+  font-weight: bold;
 }
 
 .reviews {
