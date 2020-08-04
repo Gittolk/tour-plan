@@ -79,18 +79,19 @@ $(document).ready(function () {
       errorClass: "invalid",
       messages: {
         name: {
-          required: "Введите ваше имя",
-          minlength: "Имя должно быть не менее 3х символов",
+          required: "Enter Your Name*",
+          minlength: "Name will be 3th simbols",
         },
         email: {
           required: "We need your email address to contact you",
           email: "Your email address must be in the format of name@domain.com",
         },
         phone: {
-          required: "Введите номер телефона",
+          required: "Enter Your phone number",
         },
       },
     });
   });
   $(".phone").mask("+7(999)-999-99-99");
+  AOS.init();
 });

@@ -31,11 +31,21 @@ a
   resize: none
 .invalid
   color: $primary
-  border-bottom: 1px solid $primary
   font-size: 12px
 .modal
   &__input.invalid
     border: 2px solid $primary
     color: $primary
     display: flex
+.footer
+  &__input
+    &-group
+      position: relative
+      label
+        position: absolute
+        z-index: 400
+        top: 53px
+        left: 20px
+        bottom: 0
+
     
