@@ -1941,12 +1941,12 @@ template {
 }
 
 @media (max-width: 768px) {
-  body.lock {
-    overflow: hidden;
-  }
   .container {
     max-width: 576px;
     width: 92%;
+  }
+  body.lock {
+    overflow: hidden;
   }
   body {
     padding-top: 78px;
@@ -1957,8 +1957,6 @@ template {
     top: 0;
     right: 0;
     z-index: 120;
-    -webkit-transition: ease 3s;
-    transition: ease 3s;
   }
   .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
     display: none;
@@ -2215,6 +2213,9 @@ template {
 }
 
 @media (max-width: 576px) and (min-width: 320px) {
+  .container {
+    max-width: 95%;
+  }
   body.lock {
     overflow: hidden;
   }

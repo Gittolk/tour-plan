@@ -17,7 +17,7 @@ $body = "
 <h2>Желает подписаться</h2>
 <b>Email:</b> $email<br>
 ";}
-else if(!empty($email,))
+
 else {
 $title = "Новое обращение Best Tour Plan";
 $body = "

@@ -128,11 +128,11 @@
       max-height: 100%
 
 @media (max-width: 768px)
-  body.lock
-    overflow: hidden
   .container
     max-width: 576px
     width: 92%
+  body.lock
+    overflow: hidden
   body
     padding-top: 78px
   .navbar
@@ -143,7 +143,6 @@
         top: 0
         right: 0
         z-index: 120
-        transition: ease 3s
     &__user, &__search
       &--mobile
         &--hidden
@@ -313,6 +312,8 @@
     &__button
       margin-bottom: 20px
 @media (max-width: 576px) and (min-width: 320px)
+  .container
+    max-width: 95%
   body.lock
     overflow: hidden
   .hotel
