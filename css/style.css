@@ -1733,6 +1733,8 @@ template {
   color: #fff;
   background-color: #EC1F46;
   border-radius: 4px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .modal__info {
@@ -1926,12 +1928,9 @@ template {
   .modal__dialog {
     width: 478px;
   }
-  .modal__info {
-    display: none;
-  }
   .modal__button {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
   .modal__dialog {
     overflow: auto;
@@ -2207,8 +2206,10 @@ template {
     max-width: 478px;
     max-height: 100%;
   }
-  .modal__button {
-    margin-bottom: 20px;
+  .modal__info {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
@@ -2438,6 +2439,8 @@ template {
     width: 90%;
   }
   .modal__button {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     margin-bottom: 20px;
   }
   .modal__title {
@@ -2448,6 +2451,9 @@ template {
   }
   .modal__message {
     height: 80px;
+  }
+  .modal__info {
+    display: none;
   }
 }
 
