@@ -33,8 +33,7 @@
   position: relative
   width: 350px
   height: 55px
-  border-radius: 4px
-  overflow: hidden
+  border-radius: 0 4px 4px 0
   &__input
     position: absolute
     width: 100%
@@ -45,6 +44,7 @@
     font-weight: 300
     font-size: 14px
     line-height: 18px
+    border-radius: 4px 4px 4px 4px
   &__button
     position: absolute
     right: 0
@@ -53,6 +53,12 @@
     color: $light
     width: 65px
     height: 100%
-
+    border-radius: 0 4px 4px 0
+.newsletter
+  &__subscribe
+    label
+      position: absolute
+      top: 55px
+      left: 20px
 
 
