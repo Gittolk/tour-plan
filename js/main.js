@@ -27,22 +27,6 @@ $(document).ready(function () {
     },
   });
 
-  // ymaps.ready(init);
-  function init() {
-    // var myMap = new ymaps.Map("map", {
-    //   center: [7.89, 98.29],
-    //   zoom: 14,
-    // });
-    // Создание геообъекта с типом точка (метка).
-    // var myGeoObject = new ymaps.GeoObject({
-    //   geometry: {
-    //     type: "Point", // тип геометрии - точка
-    //     coordinates: [7.89071, 98.294758], // координаты точки
-    //   },
-    // });
-    // myMap.geoObjects.add(myGeoObject);
-  }
-
   var menuButton = $(".menu-button");
   menuButton.on("click", function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
