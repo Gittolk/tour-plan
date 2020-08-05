@@ -46,6 +46,7 @@ $(document).ready(function () {
   var menuButton = $(".menu-button");
   menuButton.on("click", function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+    $("body").toggleClass("lock");
   });
   var modalButton = $("[data-toggle = modal]");
   var closeModalButton = $(".modal__close");
