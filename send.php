@@ -11,21 +11,38 @@ $message = $_POST['message'];
 $phone = $_POST['phone'];
 
 // Формирование самого письма
-if(!empty($email)){
-    $title = "Новый подписчик";
-$body = "
-<h2>Желает подписаться</h2>
-<b>Email:</b> $email<br>
-";}
-
-else {
-$title = "Новое обращение Best Tour Plan";
+// if(!empty($email)){
+//     $title = "Новый подписчик";
+// $body = "
+// <h2>Желает подписаться</h2>
+// <b>Email:</b> $email<br>
+// ";}
+// elseif(!empty($name)){
+//     $title = "Новое обращение Best Tour Plan";
+// $body = "
+// <h2>Новое письмо</h2>
+// <b>Имя:</b> $name<br>
+// <b>Телефон:</b> $phone<br><br>
+// <b>Email:</b> $email<br><br>
+// <b>Сообщение:</b><br>$message
+// "
+// ;}
+// else {
+// $title = "Новое обращение Best Tour Plan";
+// $body = "
+// <h2>Новое письмо</h2>
+// <b>Имя:</b> $name<br>
+// <b>Телефон:</b> $phone<br><br>
+// <b>Сообщение:</b><br>$message
+// ";}
+$title = "Заголовок письма";
 $body = "
 <h2>Новое письмо</h2>
 <b>Имя:</b> $name<br>
+<b>Почта:</b> $email<br><br>
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
-";}
+";
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -65,6 +82,7 @@ else {$result = "error";}
 }
 
 // Отображение результата
-if(empty($email)){
-header('location: thankyou.html');}
-else{(header('location: thankssubscribe.html'));}
+// if(empty($email)){
+// header('location: thankyou.html');}
+// else{
+header('location: thankyou.html');
