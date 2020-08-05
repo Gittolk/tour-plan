@@ -1542,6 +1542,10 @@ template {
   margin-top: 0;
 }
 
+.footer__item_number, .footer__item_link {
+  color: #E0E0E0;
+}
+
 .footer__icon-wrapper {
   min-width: 40px;
 }
