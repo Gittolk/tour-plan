@@ -78,4 +78,7 @@ $(document).ready(function () {
     });
   });
   $(".phone").mask("+7(999)-999-99-99");
+  $(".map__google").mousemove(function () {
+    alert("Вы переместили указатель мыши в пределах указанного элемента.");
+  });
 });
