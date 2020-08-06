@@ -78,7 +78,11 @@ $(document).ready(function () {
     });
   });
   $(".phone").mask("+7(999)-999-99-99");
-  $(".map__google").mousemove(function () {
-    alert("Вы переместили указатель мыши в пределах указанного элемента.");
+  $(".map").mouseover(function () {
+    console.log("12321");
+    var mapImage = $(".map__image");
+    var mapGoogle = $(".map__google");
+    mapImage.addClass("map__image_script");
+    mapGoogle.addClass("map__google_googleScript");
   });
 });
