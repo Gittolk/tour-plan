@@ -73,6 +73,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Enter Your phone number",
+          minlength: "You number must be min 9 numerals",
         },
       },
     });
