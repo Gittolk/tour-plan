@@ -720,15 +720,21 @@
                 </div>
                 <div class="footer__item_phone">
                   Tel (business hours) :
-                  <a href="#" class="footer__item_number"> 269 1500</a> <br />
+                  <a href="tel:52-56-61-38" class="footer__item_number">
+                    269 1500</a
+                  >
+                  <br />
                   Tel (hotline) Monday - Saturday:<a
-                    href="#"
+                    href="tel:52-56-61-38"
                     class="footer__item_number"
                   >
                     52-56-61-38</a
                   >
                   (08:00 am – 20:00 pm) <br />
-                  Tel (hotline) Sunday:<a href="#" class="footer__item_number">
+                  Tel (hotline) Sunday:<a
+                    href="tel:52-56-61-38"
+                    class="footer__item_number"
+                  >
                     52-56-61-38</a
                   >
                   (08:00 am – 14:00 pm)
@@ -739,7 +745,9 @@
                   <img src="img/email.svg" alt="email" class="footer__icon" />
                 </div>
                 <div class="footer__item_mail">
-                  <a href="#" class="footer__item_link"
+                  <a
+                    href="mailto:cherly.lawson@example.com"
+                    class="footer__item_link"
                     >cherly.lawson@example.com</a
                   >
                 </div>
@@ -767,6 +775,7 @@
                   placeholder="Enter your number"
                   name="phone"
                   minlength="17"
+                  pattern="[0-9]{10}"
                   required
                 />
               </div>
@@ -827,8 +836,9 @@
           <input
             type="email"
             class="input modal__input"
-            placeholder="Your email"
+            placeholder="Your email*"
             name="email"
+            required
           />
           <textarea
             class="message modal__message"
