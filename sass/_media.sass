@@ -69,6 +69,7 @@
     &__image
       width: 100%
   .footer
+    padding-top: 73px
     &-wrapper
       grid-template-columns: repeat(6,1fr)
       grid-row-gap: 40px
@@ -82,10 +83,13 @@
         grid-row: 1/2
         grid-column: span 4
         align-self: center
+        margin-bottom: -15px
+        margin-left: -55px
     &__contact
       &-details
         grid-column: span 5
         grid-row: 3
+        margin-top: 20px
       &-form
         grid-column: span 5
         grid-row: 4
@@ -96,12 +100,15 @@
       grid-column: span 2
     &__additional
       grid-column: span 2
+      margin-left: -40px
     &-bottom
       &__flex
         width: 100%
     &__input
       &-group
         flex-basis: 48%
+    &__button
+      margin-bottom: 75px
   .modal
     &__dialog
       width: 478px
@@ -253,6 +260,14 @@
     width: 100%
     height: 255px
   .footer
+    &__social
+      &-network
+        margin: 0
+    &__contact
+      &-details 
+        margin: 0   
+    &__additional
+      margin: 0
     &-group
       &__input
         flex-basis: 100%
